@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import 'components/common/Inputs/styles.scss';
 
-export interface CheckBoxItemProps {
+export interface RadioItemProps {
   checked: boolean;
   disabled?: boolean
   name: string;
@@ -11,12 +11,12 @@ export interface CheckBoxItemProps {
   value: string;
 }
 
-const CheckBoxItem: React.SFC<CheckBoxItemProps> = ({ checked, disabled = false, name, onChange, value, children }) => {
+const RadioItem: React.SFC<RadioItemProps> = ({ checked, disabled = false, name, onChange, value, children }) => {
   return (
-    <div className="checkbox">
-      <label className="checkbox-label">
+    <div className="radio">
+      <label className="radio-label">
         <input
-          type="checkbox"
+          type="radio"
           checked={ checked }
           disabled={ disabled }
           name={ name }
@@ -29,4 +29,4 @@ const CheckBoxItem: React.SFC<CheckBoxItemProps> = ({ checked, disabled = false,
   );
 };
 
-export default CheckBoxItem;
+export default RadioItem;

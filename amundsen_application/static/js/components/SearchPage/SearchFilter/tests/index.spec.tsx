@@ -8,7 +8,7 @@ import CheckBoxItem from 'components/common/Inputs/CheckBoxItem';
 describe('SearchFilter', () => {
   const setup = (propOverrides?: Partial<SearchFilterProps>) => {
     const props = {
-      checkBoxSections: [
+      radioSections: [
         {
           title: 'Type',
           categoryId: 'datasets',
